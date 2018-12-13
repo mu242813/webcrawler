@@ -18,7 +18,11 @@ links=getLinks("https://wiprodigital.com")
 
 #print(links)
 
+with open('site_map.txt', 'w') as f:
 	for x in links:
 		if re.match("https://wiprodigital.com", x) is not None:
-			print(x)
+			print(x,file=f)
+  	
+
+
 
