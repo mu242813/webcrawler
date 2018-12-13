@@ -16,5 +16,9 @@ def getLinks(url):
 links=[] 
 links=getLinks("https://wiprodigital.com")
 
-print(links)
+#print(links)
+
+	for x in links:
+		if re.match("https://wiprodigital.com", x) is not None:
+			print(x)
 
